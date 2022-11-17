@@ -1,0 +1,99 @@
+Basic and important question of IAM -:
+
+1.Which of these is identity in IAM ?
+a) Users
+b) Groups
+c) Roles
+d) All of these
+
+2.When you first create an Amazon Web Service (AWS) account, 
+you begin with a single sign-in identity that has complete access
+to all AWS services and resources in the account. This identity called:
+a) Root user
+b) Main user
+c) Super user
+d) None of these
+
+3.Which of these is IAM principal ?
+a) A user
+b) A role 
+c) An application
+d) All of these
+
+4.How many types of policies is supported by AWS ?
+a)4
+b)5
+c)6
+d)7
+
+5.Which of these is not an IAM policy type ?
+a) Smart policies
+b) Access control lists (ACLs)
+c) Session policies
+d) Organizations SCPs
+
+6.Names of IAM identities (users, roles, and groups)
+a) Must be unique within the AWS account
+b) Must be unique within the AZ
+c) Must be unique within region
+d) Must be unique within the AWS cloud whole
+
+7.How many maximum groups can be created in an AWS accounts ?
+a) 25
+b) 50
+c) 100
+d) 200
+
+8.How many maximum users can be created in an AWS account ?
+a) 2000
+b) 5000
+c) 8000
+d) 10000
+
+9.How many maximum roles cab be created in an AWS account ?
+a) 200
+b) 300
+c) 400
+d) 500
+
+10.An IAM user can not be a member of more than how many group ?
+a) 10
+b) 20
+c) 50
+d) 100
+
+11.How many maximum access keys can be assigned to an IAM user ?
+a) 1
+b) 2
+c) 3
+d) 4
+
+12.How many maximum managed policies can be assigned to an IAM entity ?
+a) 2
+b) 5
+c) 10
+d) 20
+
+13.How many maximum server certificates can be store in an AWS account ?
+a) 20
+b) 50
+c) 100
+d) 500
+
+14.How many maximum customer-managed policies can be created in an AWS account ?
+a) 250
+b) 500
+c) 750
+d) 1000
+
+15.A ---- is a document that provides a formal statement of one or more premission ?
+a) Group
+b) Policy
+c) Role
+c) User
+
+
+
+
+ANSWER
+1.d,2.a,3.d,4.c,5.a,6.a,7.c,8.b,9.d,10.a,11.b,12.c,13.a,14.d,15.b

@@ -1,0 +1,57 @@
+Basic and important knowledge of Load Balancer
+
+Load Balancer -: This is a service that uniformly distributes the network traffic and workloads 
+across multiple servers.
+Load Balancer increases the availability and fault tolarance of an application.
+
+Fault tolarance -: It is the ability of a workload to remain operational with zero downtime or
+data loss in the event of a disruption.
+
+Types of Load Balancer -:
+
+1. Classic Load Balancer - It provides basic load balancing across multiple Amazon Ec2 instances.
+# Distributes the incoming application traffic across EC2 instance in multiple AZs.
+# Routes the traffic to healthy instances only.
+# Internet and internet facing load balancer.
+
+2. Application Load Balancer - Application load balancing intelligently provide scalability, 
+performance and availability.
+# Functions at the 7th layer of the OSI model.
+# Identify the incoming resource type and directs it to the appropriate server.
+# Works on HTTP and HTTPS.
+# It is called Intelligent Load Balancer.
+
+3. Network Load Balancer - NLB distributes incoming traffic across multiple targets.
+# Function at the 4th layer of OSI model.
+# Handles million of requests per second.
+# This is used to handling sudden and voilent site traffic.
+# Works on TCP, UDP, TLS and supports elastic or static IP.
+
+4. Gateway Load Balancer - It helps you easily deploy, scale, and manage your third party virtual
+appliances.
+ # Works on 3rd layer of OSI model.
+
+Health Check - Health check is the function that provided by load balancer.
+# It ensure only healthy resourse can get the traffic .
+
+Cross Zone Load Balancing - It makes easier to deploy and manage applications that run across 
+multiple subnets in different Availability zones.
+# Traditioally Load Balancer direct equal of the traffic based on the number of AZs.
+
+For ex. we have 2 AZs and total 7 instances 
+AZ1                                       AZ2
+we have 5 instance in AZ1 - 50%               we have 2 instance in AZ2 - 50%
+      
+                 LB will distribute traffic on both AZs 50-50
+
+In that case load balancer will distributes 50-50 traffic on both AZs
+Then thier will be heavy load on AZ2 because we have only 2 instance their and they can be
+overloaded or they can go down or unhealthy.
+   In that scenario we will use Cross Zone Load Balancer .
+It will distribute traffic equally among those 7 instances.
+
+AZ1             AZ2
+5 instance  -   2 instance
+100% load will be distribute among those 7 instance 100/7
+Normal load balancer will distribute traffic between AZs where as Cross Zone Load Balancer
+will distribute traffic among those registered instance in those AZs.

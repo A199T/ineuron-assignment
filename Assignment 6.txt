@@ -1,0 +1,13 @@
+ Explain the below AWS Architecture
+
+Load balancer----Web server----Database server
+
+Load Balancer: You can create a load balancer using Nginx too! Basically, you will be passing requests 
+to multiple web servers instead of a single one based on an algorithm you select.
+
+Web Server: It can be a simple Apache/Nginx server that will serve the static data and pass scripts 
+that require execution to an Application server.
+
+Database Server: You can use any DBMS/RDBMS that allows remote connections. Create a database user
+ with allowed remote connections from application server so that application server can query the 
+database server and get the information it requires to serve a request.
